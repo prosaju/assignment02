@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.inter-fonts {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared styles */
+.display-flex {
+  display: flex;
+}
+.max-width {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.text-gray01 {
+  color: #8987a1;
+}
+.text-orange {
+  color: #e95a08;
+}
+.mb {
+  margin-bottom: 120px;
+}
+.btn-primary {
+  background-color: #e95a08;
+  color: white;
+  padding: 20px 82px;
+  font-weight: 600;
+}
+
+/* header section style */
+/* navbar related styles */
+.navbar {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.nav-item {
+  list-style: none;
+  margin-top: 23px;
+}
+.mr {
+  margin-right: 48px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.home {
+  font-weight: 700;
+  color: black;
+}
+
+/* banner related styles */
+.banner {
+  align-items: end;
+}
+.banner-container {
+  width: 50%;
+}
+.banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+/* .banner-description{
+    
+} */
+.banner-image {
+  width: 50%;
+}
+/* Our plants related style */
+.our-plants {
+  text-align: center;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+/* card related style */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+.card {
+  text-align: center;
+}
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #111111;
+}
+.card-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+/* Responsive Media */
+@media screen and (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+    align-items: start;
+    width: 100%;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
