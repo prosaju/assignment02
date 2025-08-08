@@ -96,6 +96,27 @@
   font-weight: 700;
   color: #111111;
 }
+/* flower & plants related style */
+
+.flower-section{
+    padding: 38px 0px 38px 60px;
+    text-align: start;
+}
+.list{
+    margin-bottom: 20px;
+}
+.image-size{
+    width: 286px;
+    height: 286px;
+}
+.image-container{
+    position: relative;
+}
+.badge-image{
+    position: absolute;
+    top: -120px;
+    left: 375px;
+}
 
 /* Responsive Media */
 @media screen and (max-width: 576px) {
@@ -103,7 +124,7 @@
     display: none;
   }
 
-  .banner {
+  .banner{
     flex-direction: column-reverse;
     align-items: start;
     width: 100%;
@@ -112,5 +133,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 20px;
+  }
+  .plant-section{
+    flex-direction: column;
   }
 }
