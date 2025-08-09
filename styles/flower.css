@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Shared styles */
@@ -155,6 +156,54 @@
   font-size: 22px;
   font-weight: 400;
   margin-top: 20px;
+}
+/* latest deals related style */
+.deals-section{
+  text-align: center;
+  margin-left: 126px;
+  margin-right: 126px;
+}
+.deals-section h2{
+  font-size: 50px;
+  font-weight: 600;
+}
+.deals-section p{
+  font-size: 22px;
+  font-weight: 400;
+}
+.bloom{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-bloom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+.ana{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-ana.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+.zabo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-zabo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+.deals-card{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 16px;
+}
+.deals-card span{
+  text-decoration: underline;
+}
+.card-container{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 /* Responsive Media */
