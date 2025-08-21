@@ -160,8 +160,6 @@
 /* latest deals related style */
 .deals-section{
   text-align: center;
-  margin-left: 126px;
-  margin-right: 126px;
 }
 .deals-section h2{
   font-size: 50px;
@@ -171,24 +169,6 @@
   font-size: 22px;
   font-weight: 400;
 }
-.bloom{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-bloom.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-}
-.ana{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-ana.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-}
-.zabo{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-zabo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center; */
-}
 .deals-card{
   height: 200px;
   display: flex;
@@ -197,13 +177,70 @@
   align-items: center;
   color: white;
   gap: 16px;
+  border-radius: 15px;
 }
 .deals-card span{
   text-decoration: underline;
 }
 .card-container{
   display: grid;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 1fr);
+  gap: 28px;
+}
+.bloom{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-bloom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ana{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-ana.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.zabo{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-zabo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 2;
+  grid-row: 1/3;
+  height: 100%;
+}
+
+/* newsletter section */
+.newsletter-section{
+  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../assets/news-letter-bg.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+
+}
+.newsletter-section h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+.submission-box input[type="email"]{
+  width: 100%;
+  padding: 8px 20px;
+  outline: none;
+}
+.submission-box input[type="email"]::placeholder{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+.submission-box{
+  display: flex;
+  width: 50%;
 }
 
 /* Responsive Media */
@@ -273,4 +310,36 @@
   .flower-section {
     margin: 0px;
   }
+  .deals-section h2{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .deals-section p{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 26px;
+}
+  .card-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 16px;
+    margin-bottom: 40px;
+  }
+  .deals-card{
+    height: 200px;
+  }
+  .zabo{
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .submission-box button{
+    padding: 8px 20px;
+  }
+  .submission-box{
+    width: 80%;
+}
+  .newsletter-section h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+
 }
