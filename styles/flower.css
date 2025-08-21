@@ -158,18 +158,18 @@
   margin-top: 20px;
 }
 /* latest deals related style */
-.deals-section{
+.deals-section {
   text-align: center;
 }
-.deals-section h2{
+.deals-section h2 {
   font-size: 50px;
   font-weight: 600;
 }
-.deals-section p{
+.deals-section p {
   font-size: 22px;
   font-weight: 400;
 }
-.deals-card{
+.deals-card {
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -179,29 +179,32 @@
   gap: 16px;
   border-radius: 15px;
 }
-.deals-card span{
+.deals-card span {
   text-decoration: underline;
 }
-.card-container{
+.card-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 28px;
 }
-.bloom{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-bloom.png");
+.bloom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/deal-bloom.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.ana{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-ana.png");
+.ana {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/deal-ana.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.zabo{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/deal-zabo.png");
+.zabo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/deal-zabo.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,8 +214,9 @@
 }
 
 /* newsletter section */
-.newsletter-section{
-  background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../assets/news-letter-bg.png");
+.newsletter-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/news-letter-bg.png");
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -221,26 +225,46 @@
   justify-content: center;
   align-items: center;
   gap: 23px;
-
 }
-.newsletter-section h2{
+.newsletter-section h2 {
   font-size: 50px;
   font-weight: 700;
   color: white;
 }
-.submission-box input[type="email"]{
+.submission-box input[type="email"] {
   width: 100%;
   padding: 8px 20px;
   outline: none;
 }
-.submission-box input[type="email"]::placeholder{
+.submission-box input[type="email"]::placeholder {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.5);
-
 }
-.submission-box{
+.submission-box {
   display: flex;
   width: 50%;
+}
+
+/* footer related style */
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.footer-link {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 40px;
+}
+.footer-link li {
+  list-style: none;
+}
+.footer-link a {
+  text-decoration: none;
+}
+.footer-img img {
+  margin-left: 24px;
 }
 
 /* Responsive Media */
@@ -248,7 +272,10 @@
   .hidden {
     display: none;
   }
-  .navbar, .banner-left, .our-plants, .plant-section{
+  .navbar,
+  .banner-left,
+  .our-plants,
+  .plant-section {
     margin: 0px 16px;
   }
   .banner {
@@ -302,44 +329,52 @@
   .flower-section br {
     display: none;
   }
-  .flower-section li{
+  .flower-section li {
     font-size: 14px;
     margin: 16px 20px;
-
   }
   .flower-section {
     margin: 0px;
   }
-  .deals-section h2{
+  .deals-section h2 {
     font-size: 24px;
     font-weight: 600;
   }
-  .deals-section p{
-  font-size: 14px;
-  font-weight: 400;
-  margin: 26px;
-}
-  .card-container{
+  .deals-section p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 26px;
+  }
+  .card-container {
     grid-template-columns: repeat(1, 1fr);
     margin: 0px 16px;
     margin-bottom: 40px;
   }
-  .deals-card{
+  .deals-card {
     height: 200px;
   }
-  .zabo{
+  .zabo {
     grid-column: auto;
     grid-row: auto;
   }
-  .submission-box button{
+  .submission-box button {
     padding: 8px 20px;
   }
-  .submission-box{
+  .submission-box {
     width: 80%;
-}
-  .newsletter-section h2{
-  font-size: 24px;
-  font-weight: 600;
-}
-
+  }
+  .newsletter-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 16px;
+  }
+  .footer-link {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    line-height: 40px;
+  }
 }
